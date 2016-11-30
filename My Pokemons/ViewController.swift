@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgPokemon: UIImageView!
     @IBOutlet weak var lbPokemonName: UILabel!
     
+    var pokemonList: [String] = ["caterpie", "ekans", "pikachu", "clefairy"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +27,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func bSearch(_ sender: AnyObject) {
-        lbPokemonName.text = tbPokemonName.text
+        
+        let pokemonName = tbPokemonName.text
+        
+        if pokemonName != "" {
+            // Label will show text
+            lbPokemonName.text = pokemonName
+        } else {
+            // Show Alert Here
+            let alert = UIAlertController(title: "Alert",
+                                          message: "Pokemon's name cannot be empty",
+                                          preferredStyle: UIAlertControllerStyle.alert)
+            
+            let action = UIAlertAction(title:"OK",
+                                       style:UIAlertActionStyle.default,
+                                       handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
 
 }
