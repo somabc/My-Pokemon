@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbPokemonName: UILabel!
     
     var pokemonList: [String] = ["caterpie", "ekans", "pikachu", "clefairy"]
+    var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
             for name in pokemonList{
                 if pokemonName == name {
                     lbPokemonName.text = pokemonName
+                    showPokemon(name)
                     isFound = true
                     break
                 }
@@ -45,6 +48,7 @@ class ViewController: UIViewController {
             
             if !isFound {
                 lbPokemonName.text = "Can't find \(pokemonName!)"
+                showPokemon("")
             }
         }
         else {
@@ -60,6 +64,10 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         
+    }
+    
+    func showPokemon(_ name: String) {
+        imgPokemon.image = UIImage(named: name)
     }
 
 }

@@ -84,7 +84,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="tIE-hD-ZsU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIE-hD-ZsU">
                                 <rect key="frame" x="83" y="313" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="WTC-nG-WpU"/>
@@ -124,7 +124,6 @@
     <resources>
         <image name="My-Pokemons" width="447" height="114"/>
         <image name="background" width="1131" height="707"/>
-        <image name="pikachu" width="300" height="281"/>
         <image name="poke_ball" width="767" height="767"/>
     </resources>
 </document>

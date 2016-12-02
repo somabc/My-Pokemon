@@ -14,6 +14,8 @@
 		935426F51DEF66C7008EFB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935426F31DEF66C7008EFB58 /* LaunchScreen.storyboard */; };
 		935427001DEF66C7008EFB58 /* My_PokemonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935426FF1DEF66C7008EFB58 /* My_PokemonsTests.swift */; };
 		9354270B1DEF66C7008EFB58 /* My_PokemonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354270A1DEF66C7008EFB58 /* My_PokemonsUITests.swift */; };
+		936BF0E31DF1FE1D00366EEC /* found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 936BF0E11DF1FE1D00366EEC /* found.wav */; };
+		936BF0E41DF1FE1D00366EEC /* not_found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 936BF0E21DF1FE1D00366EEC /* not_found.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		935427061DEF66C7008EFB58 /* My PokemonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My PokemonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9354270A1DEF66C7008EFB58 /* My_PokemonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_PokemonsUITests.swift; sourceTree = "<group>"; };
 		9354270C1DEF66C7008EFB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936BF0E11DF1FE1D00366EEC /* found.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = found.wav; sourceTree = "<group>"; };
+		936BF0E21DF1FE1D00366EEC /* not_found.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = not_found.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				935426EC1DEF66C7008EFB58 /* ViewController.swift */,
 				935426EE1DEF66C7008EFB58 /* Main.storyboard */,
 				935426F11DEF66C7008EFB58 /* Assets.xcassets */,
+				936BF0E11DF1FE1D00366EEC /* found.wav */,
+				936BF0E21DF1FE1D00366EEC /* not_found.wav */,
 				935426F31DEF66C7008EFB58 /* LaunchScreen.storyboard */,
 				935426F61DEF66C7008EFB58 /* Info.plist */,
 			);
@@ -233,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				935426F51DEF66C7008EFB58 /* LaunchScreen.storyboard in Resources */,
+				936BF0E31DF1FE1D00366EEC /* found.wav in Resources */,
 				935426F21DEF66C7008EFB58 /* Assets.xcassets in Resources */,
+				936BF0E41DF1FE1D00366EEC /* not_found.wav in Resources */,
 				935426F01DEF66C7008EFB58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +513,7 @@
 				935427111DEF66C7008EFB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		935427121DEF66C7008EFB58 /* Build configuration list for PBXNativeTarget "My PokemonsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				935427141DEF66C7008EFB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		935427151DEF66C7008EFB58 /* Build configuration list for PBXNativeTarget "My PokemonsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				935427171DEF66C7008EFB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
