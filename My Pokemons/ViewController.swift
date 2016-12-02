@@ -27,13 +27,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func bSearch(_ sender: AnyObject) {
+        lbPokemonName.text = ""
         
         let pokemonName = tbPokemonName.text
         
+        var isFound = false
+        
         if pokemonName != "" {
             // Label will show text
-            lbPokemonName.text = pokemonName
-        } else {
+            for name in pokemonList{
+                if pokemonName == name {
+                    lbPokemonName.text = pokemonName
+                    isFound = true
+                    break
+                }
+        }
+            
+            if !isFound {
+                lbPokemonName.text = "Can't find \(pokemonName)"
+            }
+        }
+        else {
             // Show Alert Here
             let alert = UIAlertController(title: "Alert",
                                           message: "Pokemon's name cannot be empty",
