@@ -41,6 +41,7 @@ class ViewController: UIViewController {
                 if pokemonName == name {
                     lbPokemonName.text = pokemonName
                     showPokemon(name)
+                    playSound("found")
                     isFound = true
                     break
                 }
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
             if !isFound {
                 lbPokemonName.text = "Can't find \(pokemonName!)"
                 showPokemon("")
+                playSound("not_found")
             }
         }
         else {
@@ -69,6 +71,18 @@ class ViewController: UIViewController {
     func showPokemon(_ name: String) {
         imgPokemon.image = UIImage(named: name)
     }
-
+    
+    
+    func playSound(_ sound: String) {
+        let audioPath = Bundle.main.path(forResource: sound, ofType: "wav")!
+        
+        do {
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
+            player.play()
+        }
+        catch {
+            print("Can't find the audio file")
+        }
 }
 
+}
