@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         }
             
             if !isFound {
-                lbPokemonName.text = "Can't find \(pokemonName)"
+                lbPokemonName.text = "Can't find \(pokemonName!)"
             }
         }
         else {
